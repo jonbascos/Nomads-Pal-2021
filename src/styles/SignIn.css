@@ -1,0 +1,54 @@
+.sign-in-form-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+}
+
+.sign-in-form {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid black;
+    box-shadow: 2px 5px 10px #333;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sign-in-form h1 {
+    margin-bottom: 10px;
+}
+
+.sign-in-form input {
+    margin: 10px;
+    height: 30px;
+    width: 200px;
+}
+
+.sign-in-form button {
+    margin: 20px auto;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: blue;
+}
+
+.sign-in-form .have-an-account {
+    font-size: 0.9em;
+}
+
+/* Media Queries */
+@media screen and (min-width: 960px) {
+    .sign-in-form input {
+        width: 400px;
+    }
+}

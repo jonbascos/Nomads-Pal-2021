@@ -1,0 +1,12 @@
+.modal-container {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal-container .modal-overlay {
+    border: 2px solid red;
+    background: rgba(0,0,0,0.8);
+}

@@ -1,0 +1,25 @@
+/*
+    Fonts:
+        Headers - Semi-bold 600
+        Regular text - Regular 400
+*/
+
+
+
+/* Main CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+Link, a {
+    text-decoration: none;
+    color: blue;
+    font-size: 1.2em;
+}

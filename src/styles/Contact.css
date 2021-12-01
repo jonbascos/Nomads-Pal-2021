@@ -1,0 +1,44 @@
+.contact-form-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-instructions-container {
+    width: 50%;
+    max-width: 450px;
+    padding: 10px;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.instructions {
+    margin-top: 10px;
+}
+
+.contact-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    margin: 10px 0;
+}
+
+.contact-form input {
+    width: 300px;
+    max-width: 450px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contact-form .form-submit-button:hover {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}

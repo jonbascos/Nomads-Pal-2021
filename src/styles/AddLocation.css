@@ -1,0 +1,39 @@
+.add-location-container {
+    width: 100vw;
+}
+
+.new-location-form-container {
+    height: 100vh;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.new-location-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.new-location-form .location-field {
+    padding: 10px;
+}
+
+.new-location-form .location-field input {
+    width: 80vw;
+    max-width: 400px;
+    height: 50px;
+    text-align: center;
+}
+
+.new-location-form #location-submit-button {
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.new-location-form #location-submit-button:active {
+    background: blue;
+}
