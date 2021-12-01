@@ -14,6 +14,8 @@ export default function Contact() {
         comment: ''
     })
 
+    const [success, setSuccess] = useState(false)
+
     const handleChange = e => {
         const {value, name} = e.target
         setMessage({
@@ -23,12 +25,12 @@ export default function Contact() {
     }
 
     const sendEmail = e => {
-        console.log('sent message')
+        setSuccess(false)
         e.preventDefault()
 
         emailjs.sendForm('service_it806eb', 'template_3p68b6k', form.current, 'user_azljNOHCfn7gcQoLxid8B')
           .then((result) => {
-              console.log(result.text);
+              console.log('result: ', result.text);
           }, (error) => {
               console.log(error.text);
           });  
@@ -39,11 +41,13 @@ export default function Contact() {
             email: '',
             comment: ''
         })
+        setSuccess(true)
       };
 
     return (
         <div className='contact-form-container'>
             <h1>How to Contact Us</h1>
+            {success && <p style={{color: 'red'}}>Message Sent</p>}
             <section className='contact-instructions-container'>
                 You can either fill out the form below, or email us at:
                 <br/>
