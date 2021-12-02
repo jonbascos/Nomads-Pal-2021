@@ -50,8 +50,6 @@ export default function Contact() {
     return (
         <div className='contact-form-container'>
             <h1>How to Contact Us</h1>
-            {error && <p style={{color: 'red'}}>{error}</p>}
-            {success && <p style={{color: 'red'}}>Message Sent</p>}
             <section className='contact-instructions-container'>
                 You can either fill out the form below, or email us at:
                 <br/>
@@ -76,6 +74,8 @@ export default function Contact() {
                     </label>
                     <input className='form-submit-button' type="submit" onClick={sendEmail}/>
                 </form>
+                {error && <p style={{color: 'red'}}>{error}</p>}
+                {success && <p style={{color: 'red'}}>Message Sent</p>}
         </div>
     )
 }

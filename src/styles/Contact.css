@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
 
 .contact-instructions-container {
@@ -37,8 +38,18 @@
     border-radius: 10px;
 }
 
+.form-submit-button {
+    width: 100px;
+}
+
 .contact-form .form-submit-button:hover {
     background-color: #333;
     color: white;
     cursor: pointer;
+}
+
+@media screen and (orientation: landscape) {
+    .contact-form-container {
+        margin-top: 180px;
+    }
 }
